@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-papercss": [
+        "dist/ng-papercss"
+      ],
+      "ng-papercss/*": [
+        "dist/ng-papercss/*"
+      ]
+    }
   }
 }
