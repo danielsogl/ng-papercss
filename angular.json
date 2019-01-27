@@ -134,7 +134,7 @@
       "root": "projects/ng-papercss",
       "sourceRoot": "projects/ng-papercss/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "ng-papercss",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
