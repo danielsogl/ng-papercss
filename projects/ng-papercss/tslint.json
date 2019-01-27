@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "lib",
+      "ng-papercss",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "lib",
+      "ng-papercss",
       "kebab-case"
     ]
   }

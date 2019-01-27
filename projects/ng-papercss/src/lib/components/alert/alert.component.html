@@ -1,0 +1,4 @@
+<div class="alert alert-{{ color }} text-left" [class.dismissible]="dismissible">
+  <ng-content></ng-content>
+  <label *ngIf="dismissible" class="btn-close" (click)="dismissAlert()">X</label>
+</div>
