@@ -6,7 +6,7 @@ import { Component, ElementRef, Input, Renderer2, Output, EventEmitter } from '@
   styleUrls: ['./alert.component.scss']
 })
 export class AlertComponent {
-  @Input() color: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' = 'primary';
+  @Input() color: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
   @Input() dismissible = false;
 
   @Output() dismiss = new EventEmitter<void>();
