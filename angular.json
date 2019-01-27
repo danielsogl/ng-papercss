@@ -166,5 +166,10 @@
       }
     }
   },
-  "defaultProject": "ng-papercss-docs"
+  "defaultProject": "ng-papercss-docs",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
