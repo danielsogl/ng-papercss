@@ -14,7 +14,6 @@ export class AlertComponent {
   constructor(private renderer: Renderer2, private el: ElementRef) {}
 
   dismissAlert() {
-    console.log(this.el.nativeElement);
     this.renderer.setStyle(this.el.nativeElement, 'display', 'none');
     this.dismiss.emit();
   }
