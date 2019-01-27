@@ -1,0 +1,35 @@
+dist: trusty
+
+language: node_js
+
+node_js:
+  - 10
+
+addons:
+  chrome: stable
+
+cache:
+  directories:
+    - node_modules
+
+stages:
+  - compile
+  - test
+
+jobs:
+  include:
+    - stage: compile
+      name: Build Library
+      script: npm run build:lib
+
+    - stage: compile
+      name: Build Docs
+      script: npm run build -- --prod --progress=false
+
+    - stage: test
+      name: Lint Project
+      script: npm run lint
+
+    - stage: test
+      name: Unit Tests
+      script: npm run test -- --watch=false --browsers=ChromeHeadless
