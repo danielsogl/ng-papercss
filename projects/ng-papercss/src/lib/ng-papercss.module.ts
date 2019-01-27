@@ -7,12 +7,26 @@ import { BadgeComponent } from './components/badge/badge.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { PopoverComponent } from './components/popover/popover.component';
+import { ProgressComponent } from './components/progress/progress.component';
 
 @NgModule({
-  declarations: [AlertComponent, ArticleComponent, BadgeComponent, ButtonComponent, CardComponent, PopoverComponent],
-  imports: [
-    CommonModule
+  declarations: [
+    AlertComponent,
+    ArticleComponent,
+    BadgeComponent,
+    ButtonComponent,
+    CardComponent,
+    PopoverComponent,
+    ProgressComponent
   ],
-  exports: [AlertComponent, ArticleComponent, BadgeComponent, ButtonComponent, CardComponent]
+  imports: [CommonModule],
+  exports: [
+    AlertComponent,
+    ArticleComponent,
+    BadgeComponent,
+    ButtonComponent,
+    CardComponent,
+    ProgressComponent
+  ]
 })
-export class NgPapercssModule { }
+export class NgPapercssModule {}
