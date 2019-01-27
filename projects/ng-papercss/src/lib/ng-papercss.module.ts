@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgPapercssComponent } from './ng-papercss.component';
 
 @NgModule({
-  declarations: [NgPapercssComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [NgPapercssComponent]
+  exports: []
 })
 export class NgPapercssModule { }
