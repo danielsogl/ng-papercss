@@ -12,7 +12,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ng-papercss/ng-package.json"
+            "project": "projects/ng-papercss/ng-package.json",
+            "tsConfig": "projects/ng-papercss/tsconfig.lib.json"
           },
           "configurations": {
             "production": {
