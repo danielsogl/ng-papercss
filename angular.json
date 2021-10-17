@@ -31,6 +31,12 @@
             "tsConfig": "projects/ng-papercss/tsconfig.spec.json",
             "karmaConfig": "projects/ng-papercss/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/ng-papercss/src/**/*.ts", "projects/ng-papercss/src/**/*.html"]
+          }
         }
       }
     },
@@ -57,14 +63,8 @@
             "polyfills": "projects/demo/src/polyfills.ts",
             "tsConfig": "projects/demo/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/demo/src/favicon.ico",
-              "projects/demo/src/assets"
-            ],
-            "styles": [
-              "projects/demo/src/styles.scss",
-              "node_modules/papercss/dist/paper.min.css"
-            ],
+            "assets": ["projects/demo/src/favicon.ico", "projects/demo/src/assets"],
+            "styles": ["projects/demo/src/styles.scss", "node_modules/papercss/dist/paper.min.css"],
             "scripts": []
           },
           "configurations": {
@@ -126,18 +126,22 @@
             "tsConfig": "projects/demo/tsconfig.spec.json",
             "karmaConfig": "projects/demo/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/demo/src/favicon.ico",
-              "projects/demo/src/assets"
-            ],
-            "styles": [
-              "projects/demo/src/styles.scss"
-            ],
+            "assets": ["projects/demo/src/favicon.ico", "projects/demo/src/assets"],
+            "styles": ["projects/demo/src/styles.scss"],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/demo/src/**/*.ts", "projects/demo/src/**/*.html"]
           }
         }
       }
     }
   },
-  "defaultProject": "ng-papercss"
+  "defaultProject": "ng-papercss",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
