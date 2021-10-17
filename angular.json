@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ng-papercss": {
+      "projectType": "library",
+      "root": "projects/ng-papercss",
+      "sourceRoot": "projects/ng-papercss/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-papercss/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-papercss/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-papercss/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-papercss/src/test.ts",
+            "tsConfig": "projects/ng-papercss/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-papercss/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-papercss"
 }
