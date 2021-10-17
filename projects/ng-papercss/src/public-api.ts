@@ -7,7 +7,7 @@ export * from './lib/components/article/article.module';
 export * from './lib/components/badge/badge.module';
 export * from './lib/components/breadcrumb/breadcrumb.module';
 export * from './lib/components/button/button.module';
-export * from './lib/components/card/card.module';
+export * from './lib/components/card/index';
 export * from './lib/components/collapsible/collapsible.module';
 export * from './lib/components/form/form.module';
 export * from './lib/components/modal/modal.module';
