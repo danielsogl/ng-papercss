@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/ng-papercss",
       "sourceRoot": "projects/ng-papercss/src",
-      "prefix": "lib",
+      "prefix": "ng-papercss",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -62,7 +62,8 @@
               "projects/demo/src/assets"
             ],
             "styles": [
-              "projects/demo/src/styles.scss"
+              "projects/demo/src/styles.scss",
+              "node_modules/papercss/dist/paper.min.css"
             ],
             "scripts": []
           },
